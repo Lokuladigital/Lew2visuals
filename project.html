@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Clip | Lew2Visuals</title>
+  <meta name="description" content="A film by Lew2Visuals.">
+  <meta name="theme-color" content="#0d0d0d">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@400;500;600&family=Martian+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+  <link href="https://api.fontshare.com/v2/css?f[]=switzer@300,400,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body data-page="project" data-seq="SEQ_CLIP">
+  <a class="sr-only" href="#main">Skip to content</a>
+  <main id="main">
+    <section class="pagehead wrap" data-clip="P00_SLATE" style="padding-bottom:clamp(28px,4vw,48px)">
+      <div class="slug mono"><span class="slug__v">V1</span><span class="slug__sq"></span><span class="mono--dim"><a href="work.html" class="link-u">Work</a> / <span data-p-type></span></span><span class="slug__right mono--dim" data-p-tc></span></div>
+      <h1 class="display display--xl" data-p-title></h1>
+      <div class="pagehead__row" style="margin-top:20px">
+        <span class="mono mono--dim" data-p-client></span>
+        <span class="mono mono--dim" data-p-year></span>
+      </div>
+    </section>
+
+    <section data-clip="P01_PLAYER">
+      <div class="player" data-player data-cursor="Play">
+        <video playsinline loop preload="metadata" data-p-video></video>
+        <button class="player__big" data-play aria-label="Play"><span aria-hidden="true">
+          <svg width="22" height="26" viewBox="0 0 22 26" fill="#f1f1f1"><path d="M0 0l22 13L0 26z"/></svg>
+        </span></button>
+        <div class="player__bar mono">
+          <button class="pbtn" data-toggle aria-label="Play">Play</button>
+          <div class="scrub" data-scrub role="slider" aria-label="Seek" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" tabindex="0">
+            <div class="scrub__ticks"></div><div class="scrub__fill"></div><div class="scrub__head"></div>
+          </div>
+          <span data-time style="font-variant-numeric:tabular-nums">00:00:00:00</span>
+          <button class="pbtn" data-fs aria-label="Fullscreen">Full</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section wrap theme-light" data-clip="P02_NOTES">
+      <div class="specs">
+        <div>
+          <div class="slug mono"><span class="slug__v">V1</span><span class="slug__sq"></span><span class="mono--dim">P02_NOTES / Brief</span></div>
+          <p class="lede" data-p-brief data-reveal style="margin:0;max-width:30ch"></p>
+        </div>
+        <div class="table mono" data-p-table data-stagger></div>
+      </div>
+    </section>
+
+    <section class="wrap theme-light" data-clip="P03_STILLS" style="padding-bottom:clamp(80px,10vw,160px)">
+      <div class="slug mono"><span class="slug__v">V1</span><span class="slug__sq"></span><span class="mono--dim">P03_STILLS / Frame grabs</span></div>
+      <div class="stills" data-p-stills></div>
+    </section>
+
+    <a class="next wrap" data-clip="P04_NEXT" data-p-next data-cursor="Next">
+      <div class="next__bg" aria-hidden="true"><video muted loop playsinline preload="none"></video></div>
+      <div class="slug mono"><span class="slug__v">V1</span><span class="slug__sq"></span><span class="mono--dim">Next clip</span><span class="slug__right mono--dim" data-next-type></span></div>
+      <div class="display display--l" data-next-title></div>
+    </a>
+  </main>
+  <div data-footer></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/dots.js"></script>
+  <script src="assets/js/pages/project.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Contact | Lew2Visuals</title>
+  <meta name="description" content="Start a project with Lew2Visuals. Event coverage, brand content, streetwear campaigns and music visuals. Replies within 1 to 2 days.">
+  <meta name="theme-color" content="#0d0d0d">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@400;500;600&family=Martian+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+  <link href="https://api.fontshare.com/v2/css?f[]=switzer@300,400,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body data-page="contact" data-seq="SEQ_CONTACT">
+  <a class="sr-only" href="#main">Skip to content</a>
+  <main id="main">
+    <section class="pagehead wrap theme-light" data-clip="C01_INQUIRY" style="padding-bottom:clamp(80px,10vw,160px)">
+      <div class="contact">
+        <div>
+          <div class="slug mono"><span class="slug__v">V1</span><span class="slug__sq"></span><span class="mono--dim">New sequence / Inquiry</span><span class="slug__right mono--dim"><span class="dot dot--live" style="width:6px;height:6px"></span> <span data-booking></span></span></div>
+          <h1 class="display display--l" data-split>Let's<br>make it</h1>
+          <div class="table mono" data-stagger style="margin-top:clamp(36px,5vw,64px)">
+            <div class="table__row"><span>Email</span><a class="link-u" href="mailto:" data-email></a></div>
+            <div class="table__row"><span>Instagram</span><a class="link-u" href="#" target="_blank" rel="noopener" data-instagram></a></div>
+            <div class="table__row"><span>Based</span><span data-based></span></div>
+            <div class="table__row"><span>Shoots in</span><span data-shoots></span></div>
+            <div class="table__row"><span>Replies</span><span data-replies></span></div>
+          </div>
+        </div>
+
+        <form class="form" data-form novalidate>
+          <div class="field">
+            <label class="field__label mono" for="f-name">Name</label>
+            <input class="input" id="f-name" name="name" autocomplete="name" placeholder="Your name" required>
+            <span class="field__err mono" aria-live="polite"></span>
+          </div>
+          <div class="field">
+            <label class="field__label mono" for="f-email">Email</label>
+            <input class="input" id="f-email" name="email" type="email" autocomplete="email" inputmode="email" placeholder="you@brand.com" required>
+            <span class="field__err mono" aria-live="polite"></span>
+          </div>
+          <div class="field">
+            <label class="field__label mono" for="f-phone">Phone <em>Optional</em></label>
+            <input class="input" id="f-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="780 555 0123">
+            <span class="field__err mono"></span>
+          </div>
+          <div class="field">
+            <label class="field__label mono" for="f-date">Shoot date <em>Roughly is fine</em></label>
+            <input class="input" id="f-date" name="date" type="month">
+            <span class="field__err mono"></span>
+          </div>
+
+          <fieldset class="field field--full" style="border:0;padding:0;margin:0">
+            <legend class="field__label mono" style="margin-bottom:10px">What are we shooting? <em>Pick any</em></legend>
+            <div class="chips" data-chips="type" data-multi></div>
+            <input type="hidden" name="type">
+          </fieldset>
+
+          <fieldset class="field field--full" style="border:0;padding:0;margin:0">
+            <legend class="field__label mono" style="margin-bottom:10px">Where</legend>
+            <div class="chips" data-chips="location"></div>
+            <input type="hidden" name="location">
+          </fieldset>
+
+          <fieldset class="field field--full" style="border:0;padding:0;margin:0">
+            <legend class="field__label mono" style="margin-bottom:10px">Budget <em>Helps me quote right</em></legend>
+            <div class="chips" data-chips="budget"></div>
+            <input type="hidden" name="budget">
+          </fieldset>
+
+          <div class="field field--full">
+            <label class="field__label mono" for="f-details">Project details</label>
+            <textarea class="input" id="f-details" name="details" placeholder="What are we shooting, when, and where does it need to live?" required></textarea>
+            <span class="field__err mono" aria-live="polite"></span>
+          </div>
+
+          <div class="form__foot">
+            <button class="btn" type="submit" data-magnetic><span class="dot"></span>Send it to Lewis</button>
+            <span class="mono mono--dim">Or email <a class="link-u" href="mailto:" data-email></a></span>
+          </div>
+
+          <div class="render mono" data-render role="status" aria-live="polite">
+            <div style="display:flex;justify-content:space-between"><span data-render-title>Rendering inquiry…</span><span data-render-pct>0%</span></div>
+            <div class="render__bar"><i></i></div>
+            <div class="mono--dim" data-render-msg>Packing your brief for Lewis.</div>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <div data-footer></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/dots.js"></script>
+  <script src="assets/js/pages/contact.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
